@@ -1,0 +1,27 @@
+.calendar {
+
+  display: flex;
+  flex-wrap: wrap;
+  width: (($gap * 2) + $size) * 7;
+  margin: 200px auto;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: $size;
+    width: $size;
+    margin-top: $gap;
+    margin-left: $gap;
+    background-color: #eee;
+    border: 1px solid black;
+    transition: transform 0.5s;
+    text-align: center;
+
+    &:hover {
+      background: pink;
+      transform: translateY(-20px);
+      cursor: pointer;
+    }
+  }
+}
