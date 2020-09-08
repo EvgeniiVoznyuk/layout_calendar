@@ -18,6 +18,6 @@
 
 @each $day, $number in $days {
   .calendar-#{$day} :first-child {
-    margin-left: ($size + $gap) * ($number - 1);
+    margin-left: ($size + (2 * $gap)) * ($number - 1);
   }
 }
